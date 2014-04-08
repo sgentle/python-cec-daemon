@@ -1,0 +1,16 @@
+This is a simple python script to pass CEC commands to uinput. The end result
+is that you should be able to press buttons on your remote and have that
+translate to buttons on your linux machine.
+
+It's basically a crappy version of libcec-daemon, but libcec-daemon doesn't work
+on my machine and this does, so there you go.
+
+You need the following:
+
+* A relatively recent Python
+* LibCEC
+* https://github.com/trainman419/python-cec
+* https://github.com/tuomasjjrasanen/python-uinput
+* The uinput kernel module loaded (try `modprobe uinput`)
+
+You can use and modify this code under the MIT License.
